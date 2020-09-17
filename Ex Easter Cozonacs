@@ -1,0 +1,21 @@
+budget = float(input())
+price_1flour = float(input())
+eggs_colored  = 0
+cake_count = 0
+ 
+price_eggs_pack = price_1flour * 0.75
+price_milk_l =( price_1flour + (price_1flour * 0.25))/ 4
+ 
+cake_price = price_1flour + price_eggs_pack + price_milk_l
+ 
+while budget >= cake_price:
+    cake_count += 1
+    eggs_colored += 3
+    if cake_count % 3 == 0:
+        eggs_colored -= cake_count - 2
+ 
+    budget -= cake_price
+ 
+if budget < cake_price:
+    print(f"You made {cake_count} cozonacs! Now you have {eggs_colored} eggs and {budget:.2f}BGN left.")
+ 
