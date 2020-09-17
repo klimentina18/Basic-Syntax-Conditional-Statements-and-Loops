@@ -1,0 +1,11 @@
+import  sys
+d = int(input())
+b = int(input())
+maxx = -sys.maxsize
+ 
+for n in range (d, b + 1):
+    if n % d == 0 and b >= n > 0:
+        if n > maxx:
+            maxx = n
+print(maxx)
+ 
