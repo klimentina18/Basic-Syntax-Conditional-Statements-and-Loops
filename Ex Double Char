@@ -1,0 +1,6 @@
+text = input()
+new = ""
+ 
+for i in range (len(text)):
+    new += text[i] + text[i]
+print(new)
