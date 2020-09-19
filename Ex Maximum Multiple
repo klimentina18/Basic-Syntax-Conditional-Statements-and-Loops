@@ -8,4 +8,12 @@ for n in range (d, b + 1):
         if n > maxx:
             maxx = n
 print(maxx)
- 
+
+
+ d = int(input())
+# b = int(input())
+# 
+# for i in range(b, 0, -1):
+#     if i % d == 0:
+#         print(i)
+#         break
